@@ -1,0 +1,417 @@
+:root{
+    --color_primario: #f2b77c;
+    --color_primario_suave: #f1d1b1;
+    --color_blanco: #fff;
+    --color_verde: #10312B;
+    --color_verde_suave: #84A384;
+    --color_gris: #e2e2e2;
+    --color_tortora: #B2926B;
+    --color_azul: #d1ebf7;
+    --altura_header: 80px; /*Estaba en 80px*/
+    --padding_left_right: .5rem;
+    --ancho_maximo: 1200px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+    /*LA IMAGEN DEL BACKGROUND DE ESTILOS TIENE QUE ESTAR DENTRO DE LA CARPETA CSS-IMG-SUN*/
+}
+
+body {
+    background-color: var(--color_blanco);
+    /*background-image: url(/css/img/light-grey-terrazzo.png);*/
+    /*min-width: 400px; investigar para que sirve*/ 
+}
+
+/* Clases Generales */
+.colortortora {
+    background-color: var(--color_tortora);
+}
+
+
+
+
+/* Start header */
+.sticky-top {
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    max-width: 6rem;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.navbar-toggler {
+    border: none;
+    color: var(--color_blanco);
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.navbar-nav{
+    margin-left:auto;
+}
+
+.navbar-nav li a {
+    color: var(--color_blanco);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-right: 1rem;
+    text-transform: uppercase;
+}
+/* End header*/
+
+
+
+
+/* WhatsApp*/
+.sectionLogoWhatsapp {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logoWhatsapp {
+    opacity: 80%;
+    padding: 9px;
+    border-radius: 1rem;
+}
+
+
+/*MAIN*/
+.container_tittle_description{
+    border: 2px none gray;
+    box-shadow: 10px 10px 20px 10px rgba(136, 133, 133, 0.3);
+    margin: 2rem;
+    padding: 0;
+    background-image:url(/css/img/light-grey-terrazzo.png) ;
+    /*background-color: rgba(209, 235, 247, 0.5);*/
+    border-radius: 1rem;
+}
+
+
+/*TITULO H1*/
+.tittle h1 {
+    display: flex;
+    color: dimgray;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 30px;
+    transition: all 0.3s ease 0s;
+}
+
+div h1:hover {
+    color: black;
+    transform: scale(1.1)
+}
+
+/*PARRAFO INDEX*/
+/*DESCRIPCION CASA VACANZE*/
+.description {
+    display: flex;
+    justify-content: center;
+    text-align:justify;
+}
+
+
+div p:hover { /*Tambien se va al footer :)*/
+    color: #59626a;
+}
+
+/*Media Queries h1 y description pantalla chica y grande*/
+@media only screen and (min-width: 280px) and (max-width: 599px){
+    .tittle h1{
+        font-size: 1rem;
+    }
+
+    .description p {
+        font-size: .8rem;
+        padding: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        line-height: 20px;
+    }
+
+    .container_tittle_description{
+        margin: 1.5rem;
+        padding: .2rem;
+    }    
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1400px){
+    .tittle h1{
+        padding-top: 1rem;
+    }
+    .description{
+        padding: 2rem;
+        margin-left: 40px;
+        margin-right: 40px;
+        line-height: 2rem;
+    }
+}
+
+
+/*Iconos*/
+.icon-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon-item img {
+    display: flex;
+    width: 50px;
+    margin: 20px 15px;
+    padding: 10px;
+    /*background-color: var(--color_primario_suave);*/
+    border: 2px solid var(--color_primario_suave);
+    border-radius: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.icon-grid .icon-item img:hover {
+    transform: scale(1.2)
+}
+
+@media only screen and (min-width: 600px) {
+    section .icon-item img {
+        display: flex;
+        width: 7rem;
+    }
+}
+
+
+
+.grandezatexto{
+    font-size: 10px;
+}
+
+.grandezatexto0{
+    font-size: 12px;
+}
+
+
+/* Mapa y contacto*/
+
+.btn {
+    background-color: var(--color_azul);
+}
+
+.googlemaps{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.mapaframe {
+    width: 75%;
+    height: 300px;
+    box-shadow: 2px 2px 5px #000000;
+    border-radius: 15px;
+}
+
+@media only screen and (min-width: 768px){
+    .mapaframe:hover {
+        filter: none;
+    }
+    .espaciotop {
+        align-self: center;
+    }
+}
+
+/* Fin main */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CONTENEDOR DE FORMULARIO SE TIENE QUE EDITAR*/
+
+.map-container {
+    box-sizing: border-box;
+    /*margin: 10px 20px;*/
+}
+
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .5em; /* esta 1.5 pero cuando achico mi pantalla se sale todo*/
+}
+
+.first-contact { /*Contactanos el primero*/
+    text-align: center;
+    font-size: 1rem;
+}
+
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(136, 133, 133, 0.3); /*0 0 20px 0 rgba(136, 133, 133, 0.3)*/
+}
+
+.contact-wrapper > * {
+    padding: 1em;
+}
+
+.contact-form {
+    background: #cfd2d4;
+}
+/*Esto lo puse yo*/
+.contact-form h3 {
+    font-size: 15px;
+}
+
+/*Para dividir en el formulario de contacto en dos */
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+
+/*Para dividir del resto del formulario el comentario y el envia */
+.contact-form form .block,
+.contact-form form div a {
+    grid-column: 1/3;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1.5em;
+    font-size: 10px;
+}
+
+/*Lo puse yo*/
+.contact-form form p label,
+.contact-form form button {
+    font-size: 14px;
+}
+
+/*Lo puse yo Controlar despues de ajustar todo el contenido TERMINOS Y CONDICIONES*/
+.contact-form form div a {
+    font-size: 10px;
+    text-align: center;
+}
+
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form select,
+.contact-form form textarea {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+/*Boton formulario*/
+.contact-form form button {
+    background: #CEDBD2;
+    border: 0;
+    text-transform: uppercase;
+    padding: 10px;
+
+}
+/*Boton formulario*/
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: gray;
+    color: whitesmoke;
+    transition: 1s ease-out;
+
+}
+
+/*Informacion de contacto del form*/
+.contact-info {
+    background: #f2f5f9;
+}
+
+.contact-info h4,
+.contact-info ul li,
+.contact-info ul li span,
+.contact-info p {
+    font-size: 13px;
+    text-align: center;
+    margin: 0 0 1rem 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*Pantalla grande.  700 yo 750 estamos probando y era min width*/
+@media only screen and (min-width: 750px){
+    .map-container {
+        padding: 10px 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .map iframe {
+        width: 150;
+        height: 50;
+    }
+
+    .map {
+        padding: 8.5rem 0;
+     }
+
+    .contact-info{
+        padding: 6rem, 0;
+    }
+
+    .contact-info h4,
+    .contact-info ul li,
+    .contact-info ul li span,
+    .contact-info p {
+        font-size: 10px;
+        text-align: center;
+    }
+}
+
+        
+/*Footer*/
+.tamañotextofooter {
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.interlineado {
+    line-height: 1rem;
+}
+
+
