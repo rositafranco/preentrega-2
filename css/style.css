@@ -72,15 +72,16 @@ body {
 
 
 /* WhatsApp*/
-.sectionLogoWhatsapp {
-    display: flex;
-    justify-content: flex-end;
+.sectionLogoWhastapp{
+    border: 2px solid black;
+   
 }
 
 .logoWhatsapp {
     opacity: 80%;
-    padding: 9px;
     border-radius: 1rem;
+    width: 4rem;
+    height: 4rem,
 }
 
 
@@ -160,17 +161,14 @@ div p:hover { /*Tambien se va al footer :)*/
 
 
 /*Iconos*/
-.icon-grid {
-    display: flex;
-    justify-content: space-around;
+.icongrid{
+    border:2px solid #000000;
 }
 
+
 .icon-item img {
-    display: flex;
     width: 50px;
-    margin: 20px 15px;
     padding: 10px;
-    /*background-color: var(--color_primario_suave);*/
     border: 2px solid var(--color_primario_suave);
     border-radius: 100%;
     cursor: pointer;
@@ -183,13 +181,12 @@ div p:hover { /*Tambien se va al footer :)*/
 
 @media only screen and (min-width: 600px) {
     section .icon-item img {
-        display: flex;
         width: 7rem;
     }
 }
 
 
-
+/* Cards */
 .grandezatexto{
     font-size: 10px;
 }
