@@ -1,3 +1,9 @@
 #Ignora los archivos de whimsical
 /whimsical
 
+#Ignora los archivos DS Store
+.DS_Store
+
+
+
+
