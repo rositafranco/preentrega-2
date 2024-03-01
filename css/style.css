@@ -70,22 +70,30 @@ body {
 
 
 
+/*MAIN*/
 
 /* WhatsApp*/
-.sectionLogoWhastapp{
-    border: 2px solid black;
-   
+
+body .sectionLogoWhatsapp {
+    display: flex;
+    justify-content: flex-end;
 }
 
-.logoWhatsapp {
-    opacity: 80%;
-    border-radius: 1rem;
-    width: 4rem;
-    height: 4rem,
+body .sectionLogoWhatsapp .logoWhatsapp {
+    width: 60px;
+    background-color: rgba(92, 91, 91, 0.5058823529);
+    padding: 9px;
+    border-radius: 50%;
+}
+
+body .sectionLogoWhatsapp .logoWhatsapp:hover {
+    box-shadow: 2px 2px 5px #000000;
+    background-color: #075E54;
 }
 
 
-/*MAIN*/
+
+/* Contenedor de descripcion */
 .container_tittle_description{
     border: 2px none gray;
     box-shadow: 10px 10px 20px 10px rgba(136, 133, 133, 0.3);
@@ -95,7 +103,6 @@ body {
     /*background-color: rgba(209, 235, 247, 0.5);*/
     border-radius: 1rem;
 }
-
 
 /*TITULO H1*/
 .tittle h1 {
@@ -161,11 +168,6 @@ div p:hover { /*Tambien se va al footer :)*/
 
 
 /*Iconos*/
-.icongrid{
-    border:2px solid #000000;
-}
-
-
 .icon-item img {
     width: 50px;
     padding: 10px;
