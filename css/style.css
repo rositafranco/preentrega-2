@@ -76,7 +76,6 @@ body {
 /*MAIN*/
 
 /* WhatsApp*/
-/*
 body .sectionLogoWhatsapp {
     display: flex;
     justify-content: flex-end;
@@ -94,7 +93,7 @@ body .sectionLogoWhatsapp .logoWhatsapp:hover {
     background-color: #075E54;
 }
 
-*/
+
 
 /* Contenedor de descripcion */
 .container_tittle_description{
