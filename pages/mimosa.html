@@ -25,6 +25,9 @@
     <!--Animate CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+    <!-- Animated On Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!--CSS LINK-->
     <link rel="stylesheet" href="../css/style.css">
 
@@ -32,27 +35,52 @@
 </head>
 
 <body>
-    <header id="header">
-        <img class="logo" src="../img/casa_vacanze_logo.png" alt="Logo">
-        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
-        <nav class="nav" id="nav">
-            <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
-            <ul class="nav-list">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../pages/mimosa.html">Mimosa</a></li>
-                <li><a href="../pages/agaveblu.html">Agave Blu</a></li>
-                <li><a href="../pages/servizi.html">Servizi</a></li>
-                <li><a href="../pages/contatto.html">Contatto</a></li>
-            </ul>
+    <header class="sticky-top colortortora text-white">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="logo" src="../img/casa_vacanze_logo.png"
+                        alt="Logo"></a>
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="2.5rem" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/mimosa.html">Mimosa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/agaveblu.html">Agave Blu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/servizi.html">Servizi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contatto.html">Contatto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <script type="text/javascript" src="../js/nav.js"></script>
-
-
-
 
     <main>
+<!-- WhatsApp -->
+        <section class="sectionLogoWhatsapp fixed-bottom mb-2 me-2">
+            <a class="animate__animated animate__tada animate__delay-3s animate__repeat-2" href="https://wa.me/393662537389" target="_blank"><img class="logoWhatsapp" src="../img/whatsapp-logo.svg" alt="logo whatsapp"></a>
+        </section>
+
+
+<!-- Seccion Descripcion Mimosa -->
         <div class="tittle">
             <h1>Appartamento Mimosa</h1>
         </div>
@@ -65,6 +93,10 @@
                 solo condividono l'ingresso per il resto sono indipendenti.
             </p>
         </div>
+
+
+
+<!-- Carousel -->
 
         <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
@@ -142,39 +174,56 @@
         </div>
     </main>
 
-    <footer>
-        <div class="logofooter">
-            <img src="img/casa_vacanze_logo.png" alt="">
-        </div>
-        <div class="container-footer">
-            <p>Casa Vacanze Mimosa & Agave Blu</p>
-            <p>Via Tevere 24</p>
-            <p>97018, (RG)</p>
-            <p>mimosa.agaveblu@gmail.com</p>
-        </div>
-        
+    <footer class="colortortora text-white mt-5">
+        <div class="container-fluid tamañotextofooter">
+            <div class="row pt-3">
+                <div class="col-xs-12 col-md-6 col-lg-6">
+                    <img class="mx-5" src="../img/casa_vacanze_logo.png" width="40" height="40" alt="">
+                    <p class="interlineado text-right mx-5">Casa Vacanze Mimosa & Agave Blu
+                        <br>Via Tevere, 24
+                        <br>97018 (RG)
+                        <br>mimosa.agaveblu@gmail.com
+                    </p>
+                </div>
 
-        <div class="copyright">
-            <h5>copyright&copy;RMFS 2024</h5>
-        </div>
-        <div class="socialmedia">
-            <a href="https://www.booking.com/hotel/it/agave-blu-e-mimosa.it.html" target="_blank">
-                <img src="img/booking_logo.svg" alt=""></a>
-            <a href="https://www.airbnb.it/users/show/541046053?_set_bev_on_new_domain=1706195281_ZDFlMGM3ZDdhOTA3"
-                target="_blank">
-                <img src="img/airbnb_logo.svg" alt=""></a>
-        </div>
-        <div class="arrow">
-            <a href="#header" class="arrow-header">
-                <img src="img/arrow.svg" width="50" alt="flecha arriba">
-            </a>
+                <div class="col-xs-12 col-md-6 col-lg-6 pt-4">
+                    <div class="row">
+                        <p class="mb-0 text-center col-xs-12 col-md-12 col-lg-12">
+                            I nostri canali:
+                        </p>
+                        <div class="text-center col-xs-12 col-md-6 col-lg-6">
+                            <a href="https://www.booking.com/hotel/it/agave-blu-e-mimosa.it.html"><img
+                                    src="../img/booking_logo.svg" width="100" alt=""></a>
+                        </div>
+                        <div class="text-center col-xs-12 col-md-6 col-lg-6">
+                            <a
+                                href="https://www.airbnb.it/users/show/541046053?_set_bev_on_new_domain=1706195281_ZDFlMGM3ZDdhOTA3"><img
+                                    src="../img/airbnb_logo.svg" width="100" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pt-2">
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    <p class="text-center">
+                        Copyright &copy;2024 Designed by RMFS
+                    </p>
+                </div>
+            </div>
         </div>
     </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+   <!-- Boostrap -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+   crossorigin="anonymous"></script>
+<!-- Animated on scroll -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+   AOS.init();
+</script>
 </body>
 
 </html>
