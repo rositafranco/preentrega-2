@@ -18,6 +18,7 @@
     padding: 0;
     font-family: "Quicksand", sans-serif;
     /*LA IMAGEN DEL BACKGROUND DE ESTILOS TIENE QUE ESTAR DENTRO DE LA CARPETA CSS-IMG-SUN*/
+    overflow-x: hidden;
 }
 
 body {
@@ -46,6 +47,8 @@ body {
     margin-left: 20px;
 }
 
+
+
 .navbar-toggler {
     border: none;
     color: var(--color_blanco);
@@ -73,7 +76,7 @@ body {
 /*MAIN*/
 
 /* WhatsApp*/
-
+/*
 body .sectionLogoWhatsapp {
     display: flex;
     justify-content: flex-end;
@@ -91,7 +94,7 @@ body .sectionLogoWhatsapp .logoWhatsapp:hover {
     background-color: #075E54;
 }
 
-
+*/
 
 /* Contenedor de descripcion */
 .container_tittle_description{
