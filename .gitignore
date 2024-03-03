@@ -3,6 +3,8 @@
 
 #Ignora los archivos DS Store
 .DS_Store
+img/.DS_Store
+img/agave_blu/.DS_Store
 
 
 
