@@ -1,6 +1,7 @@
 :root{
     --color_primario: #f2b77c;
     --color_primario_suave: #f1d1b1;
+    --color_negro: #222222;
     --color_blanco: #fff;
     --color_verde: #10312B;
     --color_verde_suave: #84A384;
@@ -73,7 +74,7 @@ body {
 
 
 
-/*MAIN*/
+/* Main */
 
 /* WhatsApp */
 
@@ -234,7 +235,7 @@ div h1:hover {
 
 
 
-/* Mapa y card contacto */
+/* Mapa y card contacto index s*/
 .contenedor{
     background-color: var(--color_verde);
 }
@@ -286,72 +287,44 @@ div h1:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*CONTENEDOR DE FORMULARIO SE TIENE QUE EDITAR*/
-
-.map-container {
-    box-sizing: border-box;
-    /*margin: 10px 20px;*/
-}
-
-.container {
+/* Sección Contatto */
+.content {
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
-    padding: .5em; /* esta 1.5 pero cuando achico mi pantalla se sale todo*/
+    padding: 1.5em;
+    font-size: .8rem;
 }
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
 
 .first-contact { /*Contactanos el primero*/
     text-align: center;
-    font-size: 1rem;
+    font-size: 3em;
 }
 
 .contact-wrapper {
-    box-shadow: 0 0 20px 0 rgba(136, 133, 133, 0.3); /*0 0 20px 0 rgba(136, 133, 133, 0.3)*/
+    box-shadow: 0 0 20px 0 rgba(32, 31, 31, 0.3); /*0 0 20px 0 rgba(136, 133, 133, 0.3)*/
+    border: 1rem solid var(--color_verde);
+    background: url(/css/img/light-grey-terrazzo.png);
 }
 
 .contact-wrapper > * {
     padding: 1em;
 }
 
-.contact-form {
-    background: #cfd2d4;
-}
-/*Esto lo puse yo*/
-.contact-form h3 {
-    font-size: 15px;
-}
-
 /*Para dividir en el formulario de contacto en dos */
 .contact-form form {
     display: grid;
     grid-template-columns: 1fr 1fr; 
+}
+
+.contact-form form label {
+    display: block;
 }
 
 /*Para dividir del resto del formulario el comentario y el envia */
@@ -363,19 +336,7 @@ div h1:hover {
 .contact-form form p {
     margin: 0;
     padding: 1.5em;
-    font-size: 10px;
-}
-
-/*Lo puse yo*/
-.contact-form form p label,
-.contact-form form button {
-    font-size: 14px;
-}
-
-/*Lo puse yo Controlar despues de ajustar todo el contenido TERMINOS Y CONDICIONES*/
-.contact-form form div a {
-    font-size: 10px;
-    text-align: center;
+    /*font-size: 10px;*/
 }
 
 
@@ -384,40 +345,41 @@ div h1:hover {
 .contact-form form select,
 .contact-form form textarea {
     width: 100%;
-    padding: 8px;
+    padding: .7em;
     border: none;
     background: none;
     outline: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--color_negro);
 }
 
 /*Boton formulario*/
 .contact-form form button {
-    background: #CEDBD2;
+    background: var(--color_tortora);
     border: 0;
     text-transform: uppercase;
-    padding: 10px;
+    padding: 1em;
+    color: var(--color_blanco);
 
 }
 /*Boton formulario*/
 .contact-form form button:hover,
 .contact-form form button:focus {
-    background: gray;
+    background: var(--color_verde);
     color: whitesmoke;
     transition: 1s ease-out;
+    outline: 0;
 
 }
 
 /*Informacion de contacto del form*/
 .contact-info {
-    background: #f2f5f9;
+    border: 10px solid var(--color_verde_suave);
 }
 
 .contact-info h4,
 .contact-info ul li,
 .contact-info ul li span,
 .contact-info p {
-    font-size: 13px;
     text-align: center;
     margin: 0 0 1rem 0;
     list-style: none;
@@ -428,31 +390,26 @@ div h1:hover {
 
 /*Pantalla grande.  700 yo 750 estamos probando y era min width*/
 @media only screen and (min-width: 750px){
-    .map-container {
-        padding: 10px 5px;
+    .content{
+        font-size: 1.5rem;
+    }
+    .contact-wrapper {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr 1fr;
     }
-
-    .map iframe {
-        width: 150;
-        height: 50;
+    .contact-wrapper > * {
+        padding: 2em;
     }
-
-    .map {
-        padding: 8.5rem 0;
-     }
 
     .contact-info{
-        padding: 6rem, 0;
+        font-size: 1rem; 
     }
 
     .contact-info h4,
     .contact-info ul li,
     .contact-info ul li span,
     .contact-info p {
-        font-size: 10px;
-        text-align: center;
+        text-align: left;
     }
 }
 
