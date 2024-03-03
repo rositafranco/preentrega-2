@@ -8,4 +8,7 @@ img/agave_blu/.DS_Store
 
 
 
+#Ignora archivos para completar formulario
+pages/exito.html
+pages/form.php
 

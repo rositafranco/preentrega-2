@@ -74,16 +74,20 @@
 
 
     <main>
+        <!-- WhatsApp -->
+        <section class="sectionLogoWhatsapp fixed-bottom mb-2 me-2">
+            <a class="animate__animated animate__tada animate__delay-3s animate__repeat-2" href="https://wa.me/393662537389" target="_blank"><img class="logoWhatsapp" src="/img/whatsapp-logo.svg" alt="logo whatsapp"></a>
+        </section>
 
         <div class="content">
             <h2 class="first-contact">Contattaci</h2>
             <div class="contact-wrapper" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <div class="contact-form">
                     <h3>Contattaci</h3>
-                    <form action="">
+                    <form action="form.php" method="post">
                         <p>
                             <label for="Full-name">Nome completo</label>
-                            <input type="text" name="Nome completo" id="Full-name" placeholder="Full-name">
+                            <input type="text" name="Nome-completo" id="Full-name" placeholder="Full-name">
                         </p>
                         <p>
                             <label for="Telephone">Telefono</label>
@@ -95,7 +99,7 @@
                         </p>
                         <p>
                             <label for="Adult">Adulti</label>
-                            <select name="" id="Adult">
+                            <select name="Adulti" id="Adult">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                             </select>
