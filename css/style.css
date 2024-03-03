@@ -167,6 +167,24 @@ div h1:hover {
     }
 }
 
+/* Carousel y texto apartamento Mimosa */
+.foto_mimosa{
+    background-color: #222222;
+}
+.discover-mimosa{
+    font-size: 1.4rem;
+    color: var(--color_blanco);
+    border: 3px solid var(--color_tortora);
+    margin-bottom: 15px;
+    
+}
+
+@media only screen and (min-width: 280px) and (max-width: 599px){
+    .discover-mimosa{
+        font-size: .8rem;
+    }
+}
+
 /* Iconos */
 
 .icon-item img {
