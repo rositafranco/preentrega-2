@@ -4,10 +4,10 @@
 #Ignora los archivos DS Store
 img/.DS_Store
 .DS_Store
+.DS_Store
 img/agave_blu/.DS_Store
 
 
 #Ignora archivos para completar formulario
 pages/exito.html
 pages/form.php
-

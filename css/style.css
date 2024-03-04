@@ -1,15 +1,10 @@
 :root{
-    --color_primario: #f2b77c;
-    --color_primario_suave: #f1d1b1;
     --color_negro: #222222;
     --color_blanco: #fff;
     --color_verde: #10312B;
     --color_verde_suave: #84A384;
-    --color_gris: #e2e2e2;
     --color_tortora: #B2926B;
     --color_azul: #d1ebf7;
-    --altura_header: 80px; /*Estaba en 80px*/
-    --padding_left_right: .5rem;
     --ancho_maximo: 1200px;
 }
 
@@ -18,14 +13,12 @@
     margin: 0;
     padding: 0;
     font-family: "Quicksand", sans-serif;
-    /*LA IMAGEN DEL BACKGROUND DE ESTILOS TIENE QUE ESTAR DENTRO DE LA CARPETA CSS-IMG-SUN*/
     overflow-x: hidden;
 }
 
 body {
     background-color: var(--color_blanco);
     /*background-image: url(/css/img/light-grey-terrazzo.png);*/
-    /*min-width: 400px; investigar para que sirve*/ 
 }
 
 /* Clases Generales */
@@ -47,7 +40,6 @@ body {
     border-radius: 50%;
     margin-left: 20px;
 }
-
 
 
 .navbar-toggler {
@@ -97,7 +89,7 @@ body .sectionLogoWhatsapp .logoWhatsapp:hover {
 
 
 
-/* Contenedor de descripcion */
+/* Contenedor de descripcion index, Mimosa y Agave Blu */
 .container_tittle_description{
     border: 10px solid var(--color_tortora);
     box-shadow: 10px 10px 20px 10px rgba(136, 133, 133, 0.3);
@@ -186,8 +178,8 @@ div h1:hover {
     }
 }
 
-/* Iconos */
 
+/* Iconos */
 .icon-item img {
     width: 50px;
     border: 1.5px solid var(--color_verde_suave);
@@ -221,7 +213,7 @@ div h1:hover {
 }
 
 
-.card{
+.card-reviews{
     background-color: #222222;
     color: var(--color_blanco);
 }
@@ -235,7 +227,7 @@ div h1:hover {
 
 
 
-/* Mapa y card contacto index s*/
+/* Mapa y card contacto index */
 .contenedor{
     background-color: var(--color_verde);
 }
@@ -283,7 +275,29 @@ div h1:hover {
     }
 }
 
-/* Fin main */
+
+/* Sección Servizi */
+.serviziaddizionali {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.card-servizi{
+    border: 1rem solid var(--color_verde);
+}
+
+
+.h5-texto{
+    font-weight: bold;
+}
+
+
+@media only screen and (min-width: 280px) and (max-width: 599px){
+    .h5-texto{
+        font-size: 1rem;
+    }
+}
 
 
 
@@ -413,7 +427,9 @@ ul {
     }
 }
 
-        
+/* Fin main */
+
+
 /*Footer*/
 .tamañotextofooter {
     font-size: 1rem;
