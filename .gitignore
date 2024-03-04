@@ -1,11 +1,6 @@
-<<<<<<< HEAD
+#Ignora los archivos de whimsical
+/whimsical
 
-
-
-
-
-
-=======
 #Ignora los archivos DS Store
 img/.DS_Store
 .DS_Store
