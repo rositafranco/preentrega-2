@@ -25,156 +25,221 @@
     <!--Animate CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+    <!-- Animated On Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!--CSS LINK-->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 
 
 </head>
 
 <body>
-    <header id="header">
-        <img class="logo" src="../img/casa_vacanze_logo.png" alt="Logo">
-        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
-        <nav class="nav" id="nav">
-            <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
-            <ul class="nav-list">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../pages/mimosa.html">Mimosa</a></li>
-                <li><a href="../pages/agaveblu.html">Agave Blu</a></li>
-                <li><a href="../pages/servizi.html">Servizi</a></li>
-                <li><a href="../pages/contatto.html">Contatto</a></li>
-            </ul>
+    <header class="sticky-top colortortora text-white">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html"><img class="logo" src="/img/casa_vacanze_logo.png"
+                        alt="Logo"></a>
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="2.5rem" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/mimosa.html">Mimosa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/agaveblu.html">Agave Blu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/servizi.html">Servizi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/contatto.html">Contatto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <script type="text/javascript" src="../js/nav.js"></script>
-
-
-
 
     <main>
-        <div class="tittle">
-            <h1>Appartamento Mimosa</h1>
-        </div>
-        <div class="description">
-            <p>
-                Case Vacanze Mimosa è un appartamento di 50 m2 composto da soggiorno con TV smart, cucina accesoriata da
-                forno, piano cottura ad induzione, frigorifero, macchina da caffè e capuccinatore.
-                La camera da letto è composta da letto matrimoniale con grande armadio, balcone e bagno privato.
-                <br>L'immobile è dotato di riscaldamento inverter (caldo/freddo) e Wi-Fi gratuito. Mimosa e Agave Blu,
-                solo condividono l'ingresso per il resto sono indipendenti.
-            </p>
-        </div>
+<!-- WhatsApp -->
+        <section class="sectionLogoWhatsapp fixed-bottom mb-2 me-2">
+            <a class="animate__animated animate__tada animate__delay-3s animate__repeat-2" href="https://wa.me/393662537389" target="_blank"><img class="logoWhatsapp" src="/img/whatsapp-logo.svg" alt="logo whatsapp"></a>
+        </section>
 
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10" aria-label="Slide 11"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11" aria-label="Slide 12"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="12" aria-label="Slide 13"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="13" aria-label="Slide 14"></button>
-                  </div>
 
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../img/mimosa/camera_da_letto.jpeg" class="d-block w-100" alt="camera_da_letto">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/mimosa/camera_da_letto2.jpeg" class="d-block w-100" alt="camera_da_letto1">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/mimosa/camera_da_letto3.jpeg" class="d-block w-100" alt="colazione">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/mimosa/camera_da_letto4.jpeg" class="d-block w-100" alt="cucina">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/mimosa/camera_da_letto5.jpeg" class="d-block w-100" alt="colazione">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/mimosa/colazione_camera_da_letto.jpeg" class="d-block w-100" alt="colazione">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/mimosa/colazione_camera_da_letto1.jpeg" class="d-block w-100" alt="colazione">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/mimosa/cucina1.jpeg" class="d-block w-100" alt="colazione">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/mimosa/divano_bianco_e_nero.jpeg" class="d-block w-100" alt="colazione">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/mimosa/frutta.jpeg" class="d-block w-100" alt="colazione">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/mimosa/frutta1.jpeg" class="d-block w-100" alt="colazione">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/mimosa/pirandello.jpeg" class="d-block w-100" alt="colazione">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/mimosa/soggiorno.jpeg" class="d-block w-100" alt="colazione">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/mimosa/soggiorno_cucina.jpeg" class="d-block w-100" alt="colazione">
-                </div>
+<!-- Seccion Descripcion Mimosa -->
+        
+        <div class="container_tittle_description" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <div class="tittle">
+                <h1 class="animate__animated animate__backInDown">Mimosa</h1>
             </div>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <div class="description">
+                <p>
+                    Case Vacanze Mimosa è un appartamento di 50 m2 composto da soggiorno con TV smart, cucina accesoriata da
+                    forno, piano cottura ad induzione, frigorifero, macchina da caffè e capuccinatore.
+                    La camera da letto è composta da letto matrimoniale con grande armadio, balcone e bagno privato.
+                    <br>L'immobile è dotato di riscaldamento inverter (caldo/freddo) e Wi-Fi gratuito. Mimosa e Agave Blu,
+                    solo condividono l'ingresso per il resto sono indipendenti.
+                </p>
+            </div>
+        </div>
+
+
+
+
+<!-- Carousel -->
+        <div class="row foto_mimosa p-3 mb-3">
+            <div class="col-12 d-flex justify-content-center align-items-center discover-mimosa" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+                <p>
+                    Vieni a scoprire il nostro appartamento
+                </p>
+            </div>
+            <div class="col-12">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="12" aria-label="Slide 13"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="13" aria-label="Slide 14"></button>
+                          </div>
+        
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/img/mimosa/camera_da_letto.jpeg" class="d-block w-100" alt="camera_da_letto">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/mimosa/camera_da_letto2.jpeg" class="d-block w-100" alt="camera_da_letto1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/mimosa/camera_da_letto3.jpeg" class="d-block w-100" alt="colazione">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/mimosa/camera_da_letto4.jpeg" class="d-block w-100" alt="cucina">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/mimosa/camera_da_letto5.jpeg" class="d-block w-100" alt="colazione">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/mimosa/colazione_camera_da_letto.jpeg" class="d-block w-100" alt="colazione">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/mimosa/colazione_camera_da_letto1.jpeg" class="d-block w-100" alt="colazione">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/mimosa/cucina1.jpeg" class="d-block w-100" alt="colazione">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/mimosa/divano_bianco_e_nero.jpeg" class="d-block w-100" alt="colazione">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/mimosa/frutta.jpeg" class="d-block w-100" alt="colazione">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/mimosa/frutta1.jpeg" class="d-block w-100" alt="colazione">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/mimosa/pirandello.jpeg" class="d-block w-100" alt="colazione">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/mimosa/soggiorno.jpeg" class="d-block w-100" alt="colazione">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/mimosa/soggiorno_cucina.jpeg" class="d-block w-100" alt="colazione">
+                        </div>
+                    </div>
+        
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
         </div>
     </main>
 
-    <footer>
-        <div class="logofooter">
-            <img src="img/casa_vacanze_logo.png" alt="">
-        </div>
-        <div class="container-footer">
-            <p>Casa Vacanze Mimosa & Agave Blu</p>
-            <p>Via Tevere 24</p>
-            <p>97018, (RG)</p>
-            <p>mimosa.agaveblu@gmail.com</p>
-        </div>
-        
+    <footer class="colortortora text-white mt-5">
+        <div class="container-fluid tamañotextofooter">
+            <div class="row pt-3">
+                <div class="col-xs-12 col-md-6 col-lg-6">
+                    <img class="mx-5" src="/img/casa_vacanze_logo.png" width="40" height="40" alt="">
+                    <p class="interlineado text-right mx-5">Casa Vacanze Mimosa & Agave Blu
+                        <br>Via Tevere, 24
+                        <br>97018 (RG)
+                        <br>mimosa.agaveblu@gmail.com
+                    </p>
+                </div>
 
-        <div class="copyright">
-            <h5>copyright&copy;RMFS 2024</h5>
-        </div>
-        <div class="socialmedia">
-            <a href="https://www.booking.com/hotel/it/agave-blu-e-mimosa.it.html" target="_blank">
-                <img src="img/booking_logo.svg" alt=""></a>
-            <a href="https://www.airbnb.it/users/show/541046053?_set_bev_on_new_domain=1706195281_ZDFlMGM3ZDdhOTA3"
-                target="_blank">
-                <img src="img/airbnb_logo.svg" alt=""></a>
-        </div>
-        <div class="arrow">
-            <a href="#header" class="arrow-header">
-                <img src="img/arrow.svg" width="50" alt="flecha arriba">
-            </a>
+                <div class="col-xs-12 col-md-6 col-lg-6 pt-4">
+                    <div class="row">
+                        <p class="mb-0 text-center col-xs-12 col-md-12 col-lg-12">
+                            I nostri canali:
+                        </p>
+                        <div class="text-center col-xs-12 col-md-6 col-lg-6">
+                            <a href="https://www.booking.com/hotel/it/agave-blu-e-mimosa.it.html"><img
+                                    src="/img/booking_logo.svg" width="100" alt=""></a>
+                        </div>
+                        <div class="text-center col-xs-12 col-md-6 col-lg-6">
+                            <a
+                                href="https://www.airbnb.it/users/show/541046053?_set_bev_on_new_domain=1706195281_ZDFlMGM3ZDdhOTA3"><img
+                                    src="/img/airbnb_logo.svg" width="100" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pt-2">
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    <p class="text-center">
+                        Copyright &copy;2024 Designed by RMFS
+                    </p>
+                </div>
+            </div>
         </div>
     </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+   <!-- Boostrap -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+   crossorigin="anonymous"></script>
+    <!-- Animated on scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
