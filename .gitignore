@@ -2,3 +2,14 @@
 #Ignora archivos para completar formulario
 pages/exito.html
 pages/form.php
+
+#Ignorar todos los archivos DS Store
+.DS_Store
+._.DS_Store
+css/.DS_Store
+css/img/.DS_Store
+img/.DS_Store
+img/agave_blu/.DS_Store
+img/mimosa/.DS_Store
+img/scicli/.DS_Store
+pages/.DS_Store
