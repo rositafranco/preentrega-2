@@ -13,3 +13,6 @@ img/agave_blu/.DS_Store
 img/mimosa/.DS_Store
 img/scicli/.DS_Store
 pages/.DS_Store
+
+#Ignorar Json
+package.json
