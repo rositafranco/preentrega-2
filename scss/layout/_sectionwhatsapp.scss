@@ -1,0 +1,24 @@
+//Whatsapp
+/* WhatsApp */
+@mixin estilologo ($ancho, $espacio, $border){
+    width: $ancho;
+    padding: $espacio;
+    border-radius: $border;
+}
+
+body{
+    .sectionLogoWhatsapp {
+        display: flex;
+        justify-content: flex-end;
+        .logoWhatsapp {
+            @include estilologo(70px, 9px, 50%);
+            background-color: rgba(92, 91, 91, 0.5058823529);
+        }
+        .logoWhatsapp:hover {
+            box-shadow: 2px 2px 5px #000000;
+            background-color: #075E54;
+        }
+    }
+}
+
+/* Fin WhatsApp */
