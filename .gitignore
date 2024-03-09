@@ -16,3 +16,5 @@ pages/.DS_Store
 
 #Ignorar Json
 package.json
+node_modules/
+package-lock.json
