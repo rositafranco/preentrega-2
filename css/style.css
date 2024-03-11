@@ -236,4 +236,23 @@ body .sectionLogoWhatsapp .logoWhatsapp:hover {
   color: #fff;
 }
 
+/* Sección Servizi */
+.serviziaddizionali {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.serviziaddizionali .card-servizi {
+  border: 1rem solid #10312B;
+}
+.serviziaddizionali .card-servizi .h5-texto {
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 599px) {
+  .h5-texto {
+    font-size: 1rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
