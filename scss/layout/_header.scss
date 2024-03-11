@@ -34,7 +34,7 @@
     margin-left:auto;
     li {
         a{
-            @include estilonavbar($color_blanco, 1.2rem, 600, 1rem, uppercase)
+            @include estilonavbar($color_blanco, 1.2rem, 600, 1rem, uppercase);
         }
     }
 }
