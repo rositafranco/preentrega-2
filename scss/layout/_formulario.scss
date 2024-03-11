@@ -1,0 +1,138 @@
+@mixin form ($ancho, $espacio, $borde, $fondo, $linea, $abajo) {
+    width: $ancho;
+    padding: $espacio;
+    border: $borde;
+    background: $fondo;
+    outline: $linea;
+    border-bottom: $abajo;
+}
+@mixin info ($centrado, $margen, $lista, $espacio){
+    text-align: $centrado;
+    margin: $margen;
+    list-style: $lista;
+    padding: $espacio; 
+}
+
+
+
+/* Sección Contatto */
+.content{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    font-size: .8rem;
+
+    .first-contact { /*Contactanos el primero*/
+        text-align: center;
+        font-size: 3em;
+    }
+    .contact-wrapper > * {
+        padding: 1em;
+    }
+    .contact-wrapper {
+        box-shadow: 0 0 20px 0 rgba(32, 31, 31, 0.3); /*0 0 20px 0 rgba(136, 133, 133, 0.3)*/
+        border: 1rem solid $color_verde;
+        background: url(/css/img/light-grey-terrazzo.png);
+        .contact-form {
+            form {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                label {
+                    display: block;
+                }
+                .block {
+                    grid-column: 1/3;
+                    button {
+                        @include form(100%, .7em, none, none, none, 1px solid $color_negro);
+                        background: $color_tortora;
+                        border: 0;
+                        text-transform: uppercase;
+                        padding: 1em;
+                        color: $color_blanco;
+                    }
+                    button:hover{
+                        background: $color_verde;
+                        color: whitesmoke;
+                        transition: 1s ease-out;
+                        outline: 0;
+                    }
+                    button:focus{
+                        background: $color_verde;
+                        color: whitesmoke;
+                        transition: 1s ease-out;
+                        outline: 0;
+                    }
+                }
+                p {
+                    margin: 0;
+                    padding: 1.5em;
+                }
+                input {
+                    @include form(100%, .7em, none, none, none, 1px solid $color_negro);
+                }
+                select{
+                    @include form(100%, .7em, none, none, none, 1px solid $color_negro);
+                }
+                textarea{
+                    @include form(100%, .7em, none, none, none, 1px solid $color_negro);
+                } 
+            }
+        }
+            
+        .contact-info {
+            border: 10px solid $color_verde_suave;
+            h4 {
+                @include info(center, 0 0 1rem 0, none, 0)
+            }
+            ul {
+                list-style: none;
+                padding: 0;
+                li {
+                    @include info(center, 0 0 1rem 0, none, 0);
+                    span {
+                        @include info(center, 0 0 1rem 0, none, 0);
+                    }
+                }
+            }
+            p {
+                @include info(center, 0 0 1rem 0, none, 0);
+            }     
+        }              
+    }
+}
+
+
+
+
+/*Pantalla grande.  700 yo 750 estamos probando y era min width*/
+@media only screen and (min-width: 750px){
+    .content{
+        font-size: 1.5rem;
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+        .contact-wrapper > * {
+            padding: 2em;
+        }
+
+        .contact-info{
+            font-size: 1rem; 
+            h4 {
+                text-align: left;
+            }
+            ul {
+                li {
+                    text-align: left;
+                    span {
+                        text-align: left;
+                    }
+                }
+            }
+            p {
+                text-align: left;
+            }
+        }
+    }
+}
