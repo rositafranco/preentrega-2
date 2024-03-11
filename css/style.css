@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -65,5 +66,71 @@ body .sectionLogoWhatsapp .logoWhatsapp:hover {
 }
 
 /* Fin WhatsApp */
+/* Container index, mimosa, agave blu */
+.container_tittle_description {
+  border: 10px solid #B2926B;
+  box-shadow: 10px 10px 20px 10px rgba(136, 133, 133, 0.3);
+  margin: 2rem;
+  padding: 0;
+  background-color: #10312B;
+  color: #fff;
+  /* background-image:url(/css/img/light-grey-terrazzo.png) ;
+   /*background-color: rgba(209, 235, 247, 0.5);*/
+  border-radius: 1rem;
+}
+
+/* Titulo */
+.tittle h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 30px;
+  transition: all 0.3s ease 0s;
+}
+.tittle h1:hover {
+  transform: scale(1.1);
+}
+
+/* Parrafo */
+/* Descripción casa vacanze, Mimosa y Agave Blu*/
+.description {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+}
+
+/*Media Queries h1 y description pantalla chica */
+@media only screen and (min-width: 280px) and (max-width: 599px) {
+  .container_tittle_description {
+    margin: 1.5rem;
+    padding: 0.2rem;
+  }
+  .container_tittle_description .tittle h1 {
+    font-size: 1rem;
+  }
+  .container_tittle_description .description p {
+    font-size: 0.8rem;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 20px;
+  }
+}
+/*Media Queries h1 y description pantalla grande */
+@media only screen and (min-width: 600px) and (max-width: 1700px) {
+  .tittle h1 {
+    padding-top: 1rem;
+  }
+  .description {
+    font-size: 1.4rem;
+    padding: 2rem;
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 2rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

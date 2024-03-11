@@ -1,0 +1,25 @@
+@mixin description ( $fuente, $espacio, $izquierda, $derecha, $linea) {
+    font-size: $fuente;
+    padding: $espacio;
+    margin-left: $izquierda;
+    margin-right: $derecha;
+    line-height: $linea;
+
+}
+/*Media Queries h1 y description pantalla chica */
+@media only screen and (min-width: 280px) and (max-width: 599px){
+    .container_tittle_description{
+        margin: 1.5rem;
+        padding: .2rem;
+        .tittle {
+            h1{
+                font-size: 1rem;
+            }
+        }
+        .description {
+            p {
+                @include description(.8rem, 10px, 10px, 10px, 20px)
+            }
+        }
+    }       
+}

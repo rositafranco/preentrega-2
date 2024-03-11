@@ -1,9 +1,16 @@
 //   Reset
 @import "./base/reset";
 
+
 //   Layout
 // Header
 @import "./layout/header";
-
 // Whatsapp
-@import "./layout/_sectionwhatsapp"
+@import "./layout/_sectionwhatsapp";
+// Container index, mimosa, agave blu
+@import "./layout/container";
+// Media Querie mobile index, mimosa, agave blu
+@import "./layout/mediaqueries-container-mobile";
+// Media Querie pantalla grande index, mimosa, agave blu
+@import "./layout/mediaqueries-container-bigscreen";
+
