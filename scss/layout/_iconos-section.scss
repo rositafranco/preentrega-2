@@ -1,0 +1,19 @@
+/* Iconos */
+.icon-item {
+    img {
+        width: 50px;
+        border: 1.5px solid $color_verde_suave;
+        margin: .5rem;
+        padding: 2px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    img:hover {
+        transform: scale(1.1)
+    }
+}
+
+
+
+

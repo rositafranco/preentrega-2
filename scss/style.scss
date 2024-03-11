@@ -5,21 +5,27 @@
 // Layout
 // Header
 @import "./layout/header";
-
 // Whatsapp
 @import "./layout/_sectionwhatsapp";
-
 // Container index, mimosa, agave blu
 @import "./layout/container";
-
 // Media Querie mobile index, mimosa, agave blu
 @import "./layout/mediaqueries-container-mobile";
-
 // Media Querie pantalla grande index, mimosa, agave blu
 @import "./layout/mediaqueries-container-bigscreen";
-
 // Carousel y texto apartamento Mimosa y Agave
 @import "./layout/carousel-mimosa-agave";
-
 // Media Querie carousel y texto apartamento Mimosa y Agave
 @import "./layout/mediaquerie-carouselMA";
+// Section Iconos
+@import "./layout/iconos-section";
+// Reviews
+@import "./layout/reviewscards";
+// Media querie reviews
+@import "./layout/mediaquerie-reviewscards";
+
+
+
+// Components
+// Card reviews
+@import "./components/card-reviews";
