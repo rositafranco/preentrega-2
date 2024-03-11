@@ -23,9 +23,17 @@
 @import "./layout/reviewscards";
 // Media querie reviews
 @import "./layout/mediaquerie-reviewscards";
+// Mapa y Card contacto index
+@import "./layout/mapa-cardcontacto";
+// Media querie mapa card contacto index
+@import "./layout/mediaquerie-mapacardcontacto";
 
 
 
 // Components
 // Card reviews
 @import "./components/card-reviews";
+// Card contacto index
+@import "./components/card-contacto";
+// Boton card contacto index
+@import "./components/btn_cardcontacto";

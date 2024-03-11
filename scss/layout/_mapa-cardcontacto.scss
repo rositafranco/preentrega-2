@@ -1,0 +1,17 @@
+/* Mapa y card contacto index */
+.contenedor{
+    background-color: $color_verde;
+    .googlemaps{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        .mapaframe {
+            width: 75%;
+            height: 300px;
+            box-shadow: 2px 2px 5px #000000;
+            border-radius: 15px;
+        }  
+    }
+}
