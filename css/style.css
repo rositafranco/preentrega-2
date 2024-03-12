@@ -316,10 +316,7 @@ body .sectionLogoWhatsapp .logoWhatsapp:hover {
   padding: 0;
 }
 .content .contact-wrapper .contact-info ul li span {
-  text-align: center;
-  margin: 0 0 1rem 0;
-  list-style: none;
-  padding: 0;
+  /*@include info(center, 0 0 1rem 0, none, 0);*/
 }
 .content .contact-wrapper .contact-info p {
   text-align: center;

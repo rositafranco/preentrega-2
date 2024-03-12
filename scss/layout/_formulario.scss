@@ -91,7 +91,7 @@
                 li {
                     @include info(center, 0 0 1rem 0, none, 0);
                     span {
-                        @include info(center, 0 0 1rem 0, none, 0);
+                        /*@include info(center, 0 0 1rem 0, none, 0);*/
                     }
                 }
             }
