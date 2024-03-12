@@ -231,7 +231,7 @@ body .sectionLogoWhatsapp .logoWhatsapp:hover {
 .content .contact-wrapper {
   box-shadow: 0 0 20px 0 rgba(32, 31, 31, 0.3); /*0 0 20px 0 rgba(136, 133, 133, 0.3)*/
   border: 1rem solid #10312B;
-  background: url(./css/img/light-grey-terrazzo.png);
+  background: url(/img/img_css/light-grey-terrazzo.png);
 }
 .content .contact-wrapper .contact-form form {
   display: grid;
