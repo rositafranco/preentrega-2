@@ -1,0 +1,42 @@
+//Header
+@mixin estilonavbar ($color, $size, $weight, $margin, $transform){
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+    margin-right: $margin;
+    text-transform: $transform;
+}
+
+
+
+/* Start header */
+.sticky-top {
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    max-width: 6rem;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.navbar-toggler {
+    border: none;
+    color: $color_blanco;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.navbar-nav{
+    margin-left:auto;
+    li {
+        a{
+            @include estilonavbar($color_blanco, 1.2rem, 600, 1rem, uppercase);
+        }
+    }
+}
+
+/* End Header */

@@ -1,0 +1,26 @@
+// Variables
+$color_negro:#222222;
+$color_blanco: #fff;
+$color_verde: #10312B;
+$color_verde_suave: #84A384;
+$color_tortora: #B2926B;
+$color_azul: #d1ebf7;
+
+//General
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: $color_blanco
+}
+
+//Clase general
+/* Clases Generales */
+.colortortora {
+    background-color: $color_tortora;
+}

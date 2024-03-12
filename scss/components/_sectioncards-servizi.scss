@@ -1,0 +1,18 @@
+/* Sección Servizi */
+.serviziaddizionali {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    .card-servizi{
+        border: 1rem solid $color_verde;
+        .h5-texto{
+            font-weight: bold;
+        } 
+    }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 599px){
+    .h5-texto{
+        font-size: 1rem;
+    }
+}
