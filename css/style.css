@@ -4,7 +4,9 @@
   margin: 0;
   padding: 0;
   font-family: "Quicksand", sans-serif;
-  overflow-x: hidden;
+  /*overflow-x: hidden;
+  overflow-y: none;*/
+  border: 1px solid #222222;
 }
 
 body {
@@ -50,17 +52,16 @@ body {
 
 /* End Header */
 /* WhatsApp */
-body .sectionLogoWhatsapp {
-  display: flex;
-  justify-content: flex-end;
+.sectionLogoWhatsapp {
+  transform: translate(-50px);
 }
-body .sectionLogoWhatsapp .logoWhatsapp {
+.sectionLogoWhatsapp .logoWhatsapp {
   width: 70px;
   padding: 9px;
   border-radius: 50%;
   background-color: rgba(92, 91, 91, 0.5058823529);
 }
-body .sectionLogoWhatsapp .logoWhatsapp:hover {
+.sectionLogoWhatsapp .logoWhatsapp:hover {
   box-shadow: 2px 2px 5px #000000;
   background-color: #075E54;
 }
@@ -152,10 +153,8 @@ body .sectionLogoWhatsapp .logoWhatsapp:hover {
 }
 /* Iconos */
 .icon-item img {
-  width: 50px;
+  width: 6rem;
   border: 1.5px solid #84A384;
-  margin: 0.5rem;
-  padding: 2px;
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.3s ease 0s;
@@ -164,6 +163,11 @@ body .sectionLogoWhatsapp .logoWhatsapp:hover {
   transform: scale(1.1);
 }
 
+@media only screen and (min-width: 280px) and (max-width: 599px) {
+  .icon-item img {
+    width: 3rem;
+  }
+}
 /* Reviews */
 .reviews {
   display: flex;

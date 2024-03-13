@@ -6,10 +6,8 @@
     border-radius: $border;
 }
 
-body{
-    .sectionLogoWhatsapp {
-        display: flex;
-        justify-content: flex-end;
+.sectionLogoWhatsapp {
+        transform: translate(-50px);
         .logoWhatsapp {
             @include estilologo(70px, 9px, 50%);
             background-color: rgba(92, 91, 91, 0.5058823529);
@@ -19,7 +17,7 @@ body{
             background-color: #075E54;
         }
     }
-}
+
 
 
 /* Fin WhatsApp */
