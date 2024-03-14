@@ -4,13 +4,13 @@
   margin: 0;
   padding: 0;
   font-family: "Quicksand", sans-serif;
-  /*overflow-x: hidden;
-  overflow-y: none;*/
+  /*overflow-x: hidden;*/
   border: 1px solid #222222;
 }
 
 body {
   background-color: #fff;
+  display: block;
 }
 
 /* Clases Generales */
@@ -52,36 +52,56 @@ body {
 
 /* End Header */
 /* WhatsApp */
-.sectionLogoWhatsapp {
-  transform: translate(-50px);
+.icono-wpp {
+  position: fixed;
+  right: 25px;
+  bottom: 35px;
+  z-index: 999;
 }
-.sectionLogoWhatsapp .logoWhatsapp {
-  width: 70px;
-  padding: 9px;
-  border-radius: 50%;
-  background-color: rgba(92, 91, 91, 0.5058823529);
-}
-.sectionLogoWhatsapp .logoWhatsapp:hover {
-  box-shadow: 2px 2px 5px #000000;
-  background-color: #075E54;
+.icono-wpp img {
+  width: 3.5rem;
+  border-radius: 100%;
 }
 
+@media only screen and (min-width: 280px) and (max-width: 599px) {
+  .icono-wpp img {
+    width: 3rem;
+  }
+}
+/*
+@mixin estilologo ($ancho, $espacio, $border){
+    width: $ancho;
+    padding: $espacio;
+    border-radius: $border;
+}
+
+.sectionLogoWhatsapp {
+        transform: translate(-50px);
+        .logoWhatsapp {
+            @include estilologo(70px, 9px, 50%);
+            background-color: rgba(92, 91, 91, 0.5058823529);
+        }
+        .logoWhatsapp:hover {
+            box-shadow: 2px 2px 5px #000000;
+            background-color: #075E54;
+        }
+    }
+
+*/
 /* Fin WhatsApp */
 /* Container index, mimosa, agave blu */
 .container_tittle_description {
-  border: 10px solid #B2926B;
   box-shadow: 10px 10px 20px 10px rgba(136, 133, 133, 0.3);
   margin: 2rem;
   padding: 0;
-  background-color: #10312B;
+  background: rgb(16, 49, 43);
+  background: linear-gradient(90deg, rgb(16, 49, 43) 34%, rgb(34, 67, 61) 92%);
   color: #fff;
-  /* background-image:url(/css/img/light-grey-terrazzo.png) ;
-   /*background-color: rgba(209, 235, 247, 0.5);*/
   border-radius: 1rem;
+  /* Titulo */
+  /* Descripción casa vacanze, Mimosa y Agave Blu*/
 }
-
-/* Titulo */
-.tittle h1 {
+.container_tittle_description .tittle h1 {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -91,13 +111,10 @@ body {
   margin-top: 30px;
   transition: all 0.3s ease 0s;
 }
-.tittle h1:hover {
+.container_tittle_description .tittle:hover {
   transform: scale(1.1);
 }
-
-/* Parrafo */
-/* Descripción casa vacanze, Mimosa y Agave Blu*/
-.description {
+.container_tittle_description .description {
   display: flex;
   justify-content: center;
   text-align: justify;
@@ -134,15 +151,27 @@ body {
   }
 }
 /* Carousel y texto apartamento Mimosa y Agave Blu */
-.foto_mimosa {
-  background-color: #222222;
-}
-
+/*@keyframes identifier {
+    0% {
+      top: 0;
+      left: 0;
+    }
+    30% {
+      top: 50px;
+    }
+    68%,
+    72% {
+      left: 50px;
+    }
+    100% {
+      top: 100px;
+      left: 100%;
+    }
+  }*/
 .discover-mimosa {
+  background-color: #222222;
   font-size: 1.4rem;
   color: #fff;
-  border: 3px solid #B2926B;
-  margin-bottom: 15px;
 }
 
 /* Media Querie Carousel y Texto apartamento Mimosa y Agave Blu */
@@ -333,40 +362,40 @@ body {
 }
 
 /*Pantalla grande.  700 yo 750 estamos probando y era min width*/
-@media only screen and (min-width: 750px) {
-  .content {
-    font-size: 1.5rem;
-  }
-  .content .contact-wrapper {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-  }
-  .content .contact-wrapper > * {
-    padding: 2em;
-  }
-  .content .contact-info {
-    font-size: 1rem;
-  }
-  .content .contact-info h4 {
-    text-align: left;
-  }
-  .content .contact-info ul li {
-    text-align: left;
-  }
-  .content .contact-info ul li span {
-    text-align: left;
-  }
-  .content .contact-info p {
-    text-align: left;
-  }
-}
+/* @media only screen and (min-width: 750px){
+    .content{
+        font-size: 1.5rem;
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+        .contact-wrapper > * {
+            padding: 2em;
+        }
+
+        .contact-info{
+            font-size: 1rem; 
+            h4 {
+                text-align: left;
+            }
+            ul {
+                li {
+                    text-align: left;
+                    span {
+                        text-align: left;
+                    }
+                }
+            }
+            p {
+                text-align: left;
+            }
+        }
+    }
+}*/
 /*Footer*/
 .tamañotextofooter {
   font-size: 1rem;
   font-weight: lighter;
-}
-.tamañotextofooter .interlineado {
-  line-height: 1rem;
 }
 
 /* Card reviews */

@@ -1,11 +1,24 @@
 /* Carousel y texto apartamento Mimosa y Agave Blu */
+/*@keyframes identifier {
+    0% {
+      top: 0;
+      left: 0;
+    }
+    30% {
+      top: 50px;
+    }
+    68%,
+    72% {
+      left: 50px;
+    }
+    100% {
+      top: 100px;
+      left: 100%;
+    }
+  }*/
 
-.foto_mimosa{
-    background-color: #222222;
-}
 .discover-mimosa{
+    background-color: #222222;
     font-size: 1.4rem;
     color: $color_blanco;
-    border: 3px solid $color_tortora;
-    margin-bottom: 15px;
 }
