@@ -4,3 +4,9 @@
     font-weight: lighter;
 }
 
+@media only screen and (min-width: 280px) and (max-width: 479px){
+    .tamañotextofooter {
+        font-size: .8rem;
+    }
+}
+

@@ -63,6 +63,7 @@ body {
   border-radius: 100%;
 }
 
+/* Media Querie version mobile */
 @media only screen and (min-width: 280px) and (max-width: 599px) {
   .icono-wpp .logo-whats {
     width: 3rem;
@@ -398,6 +399,11 @@ body {
   font-weight: lighter;
 }
 
+@media only screen and (min-width: 280px) and (max-width: 479px) {
+  .tamañotextofooter {
+    font-size: 0.8rem;
+  }
+}
 /* Card reviews */
 .grandezatexto {
   font-size: 10px;
