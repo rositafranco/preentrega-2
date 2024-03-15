@@ -58,13 +58,13 @@ body {
   bottom: 35px;
   z-index: 999;
 }
-.icono-wpp img {
+.icono-wpp .logo-whats {
   width: 3.5rem;
   border-radius: 100%;
 }
 
 @media only screen and (min-width: 280px) and (max-width: 599px) {
-  .icono-wpp img {
+  .icono-wpp .logo-whats {
     width: 3rem;
   }
 }
