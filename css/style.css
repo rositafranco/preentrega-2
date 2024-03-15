@@ -198,55 +198,6 @@ body {
     width: 3rem;
   }
 }
-/* Reviews */
-.reviews {
-  display: flex;
-  justify-content: center;
-  font-size: 1.5rem;
-  margin-top: 1rem;
-  padding-top: 1rem;
-  margin-bottom: 0;
-}
-
-/* Media Querie Reviewcard */
-@media only screen and (min-width: 280px) and (max-width: 599px) {
-  .reviews {
-    font-size: 0.9rem;
-  }
-}
-/* Mapa y card contacto index */
-.contenedor {
-  background-color: #10312B;
-}
-.contenedor .googlemaps {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.contenedor .googlemaps .mapaframe {
-  width: 75%;
-  height: 300px;
-  box-shadow: 2px 2px 5px #000000;
-  border-radius: 15px;
-}
-
-/* Media querie mapa card contacto index */
-@media only screen and (min-width: 768px) {
-  .card-contacto h3 {
-    font-size: 1.7rem;
-  }
-  .card-contacto p {
-    font-size: 1.5rem;
-  }
-  .card-contacto .btn {
-    font-size: 1.2rem;
-  }
-  .mapaframe:hover {
-    filter: none;
-  }
-}
 /* Sección Contatto */
 .content {
   max-width: 1170px;
@@ -405,6 +356,16 @@ body {
   }
 }
 /* Card reviews */
+/* Reviews */
+.reviews {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  margin-bottom: 0;
+}
+
 .grandezatexto {
   font-size: 10px;
 }
@@ -416,9 +377,31 @@ body {
   font-size: 12px;
 }
 
-/* Card contacto index */
-.card-contacto {
-  background-color: #fff;
+/* Media Querie Reviewcard */
+@media only screen and (min-width: 280px) and (max-width: 599px) {
+  .reviews {
+    font-size: 0.9rem;
+  }
+}
+/* Mapa y card contacto index */
+.contenedor {
+  background-color: #10312B;
+}
+.contenedor .googlemaps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.contenedor .googlemaps .mapaframe {
+  width: 75%;
+  height: 300px;
+  box-shadow: 2px 2px 5px #000000;
+  border-radius: 15px;
+}
+.contenedor .googlemaps .mapaframe:hover {
+  filter: none;
 }
 
 /* Boton card contacto index */
