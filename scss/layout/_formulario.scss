@@ -19,7 +19,7 @@
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
-    padding: 1.5em;
+    padding: .5em; /*1.5*/
     font-size: .8rem;
 
     .first-contact { /*Contactanos el primero*/
@@ -27,11 +27,11 @@
         font-size: 3em;
     }
     .contact-wrapper > * {
-        padding: 1em;
+        padding: .5em; /*1em*/
     }
     .contact-wrapper {
         box-shadow: 0 0 20px 0 rgba(32, 31, 31, 0.3); /*0 0 20px 0 rgba(136, 133, 133, 0.3)*/
-        border: 1rem solid $color_verde;
+        border: .5rem solid $color_verde; /*1rem*/
         background: url(/img/img_css/light-grey-terrazzo.png);
         .contact-form {
             form {
@@ -65,16 +65,16 @@
                 }
                 p {
                     margin: 0;
-                    padding: 1.5em;
+                    padding: .5em; /*1.5em*/
                 }
                 input {
-                    @include form(100%, .7em, none, none, none, 1px solid $color_negro);
+                    @include form(100%, .5em, none, none, none, 1px solid $color_negro); /*7em*/
                 }
                 select{
-                    @include form(100%, .7em, none, none, none, 1px solid $color_negro);
+                    @include form(100%, .5em, none, none, none, 1px solid $color_negro);
                 }
                 textarea{
-                    @include form(100%, .7em, none, none, none, 1px solid $color_negro);
+                    @include form(100%, .5em, none, none, none, 1px solid $color_negro);
                 } 
             }
         }
@@ -102,10 +102,25 @@
 }
 
 
+@media only screen and (max-width: 281px){
+    .contact-form {
+        form {
+            display: grid;
+            grid-template-columns: 1fr;
+            label {
+                display: block;
+            }
+            .block {
+                grid-column: 1/2;
+            }
+        }
+    }
+}
+
 
 
 /*Pantalla grande.  700 yo 750 estamos probando y era min width*/
-/* @media only screen and (min-width: 750px){
+@media only screen and (min-width: 992px){
     .content{
         font-size: 1.5rem;
         .contact-wrapper {
@@ -134,4 +149,4 @@
             }
         }
     }
-}*/
+}
