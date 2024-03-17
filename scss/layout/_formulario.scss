@@ -32,7 +32,8 @@
     .contact-wrapper {
         box-shadow: 0 0 20px 0 rgba(32, 31, 31, 0.3); /*0 0 20px 0 rgba(136, 133, 133, 0.3)*/
         border: .5rem solid $color_verde; /*1rem*/
-        background: url(/img/img_css/light-grey-terrazzo.png);
+        background: rgb(206,210,213);
+        background: linear-gradient(90deg, rgba(206,210,213,0.3604035364145658) 0%, rgba(207,210,212,1) 100%);
         .contact-form {
             form {
                 display: grid;
@@ -91,6 +92,7 @@
                     @include info(center, 0 0 1rem 0, none, 0);
                     span {
                         @include info(center, 0 0 1rem 0, none, 0);
+                        font-size: .8rem;
                     }
                 }
             }
@@ -103,26 +105,26 @@
 
 
 @media only screen and (max-width: 281px){
-    .contact-form {
-        form {
-            display: grid;
-            grid-template-columns: 1fr;
-            label {
-                display: block;
-            }
-            .block {
-                grid-column: 1/2;
+    .content {
+        font-size: .6rem;
+        .contact-info {
+            ul {
+                li {
+                    span {
+                        font-size: .6rem;
+                    }
+                }
             }
         }
+
     }
 }
 
 
-
 /*Pantalla grande.  700 yo 750 estamos probando y era min width*/
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 720px){
     .content{
-        font-size: 1.5rem;
+        font-size: 1rem;/*1.5*/
         .contact-wrapper {
             display: grid;
             grid-template-columns: 2fr 1fr;
@@ -132,7 +134,7 @@
         }
 
         .contact-info{
-            font-size: 1rem; 
+            font-size: .8rem; 
             h4 {
                 text-align: left;
             }
@@ -141,6 +143,7 @@
                     text-align: left;
                     span {
                         text-align: left;
+                        font-size: .8rem;
                     }
                 }
             }

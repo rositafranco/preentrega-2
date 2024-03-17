@@ -216,7 +216,8 @@ body {
 .content .contact-wrapper {
   box-shadow: 0 0 20px 0 rgba(32, 31, 31, 0.3); /*0 0 20px 0 rgba(136, 133, 133, 0.3)*/
   border: 0.5rem solid #10312B; /*1rem*/
-  background: url(/img/img_css/light-grey-terrazzo.png);
+  background: rgb(206, 210, 213);
+  background: linear-gradient(90deg, rgba(206, 210, 213, 0.3604035364) 0%, rgb(207, 210, 212) 100%);
 }
 .content .contact-wrapper .contact-form form {
   display: grid;
@@ -306,6 +307,7 @@ body {
   margin: 0 0 1rem 0;
   list-style: none;
   padding: 0;
+  font-size: 0.8rem;
 }
 .content .contact-wrapper .contact-info p {
   text-align: center;
@@ -315,21 +317,17 @@ body {
 }
 
 @media only screen and (max-width: 281px) {
-  .contact-form form {
-    display: grid;
-    grid-template-columns: 1fr;
+  .content {
+    font-size: 0.6rem;
   }
-  .contact-form form label {
-    display: block;
-  }
-  .contact-form form .block {
-    grid-column: 1/2;
+  .content .contact-info ul li span {
+    font-size: 0.6rem;
   }
 }
 /*Pantalla grande.  700 yo 750 estamos probando y era min width*/
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 720px) {
   .content {
-    font-size: 1.5rem;
+    font-size: 1rem; /*1.5*/
   }
   .content .contact-wrapper {
     display: grid;
@@ -339,7 +337,7 @@ body {
     padding: 2em;
   }
   .content .contact-info {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .content .contact-info h4 {
     text-align: left;
@@ -349,6 +347,7 @@ body {
   }
   .content .contact-info ul li span {
     text-align: left;
+    font-size: 0.8rem;
   }
   .content .contact-info p {
     text-align: left;
