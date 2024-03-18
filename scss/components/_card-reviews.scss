@@ -1,4 +1,13 @@
 /* Card reviews */
+/* Reviews */
+.reviews{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    margin-bottom: 0;
+}
 .grandezatexto{
     font-size: 10px;
     .card-reviews{
@@ -7,5 +16,12 @@
         .grandezatexto0{
             font-size: 12px;
         }
+    }
+}
+
+/* Media Querie Reviewcard */
+@media only screen and (min-width: 280px) and (max-width: 599px){
+    .reviews{
+        font-size: .9rem;
     }
 }

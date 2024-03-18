@@ -1,25 +1,29 @@
 //Whatsapp
 /* WhatsApp */
-@mixin estilologo ($ancho, $espacio, $border){
-    width: $ancho;
-    padding: $espacio;
-    border-radius: $border;
-}
 
-body{
-    .sectionLogoWhatsapp {
-        display: flex;
-        justify-content: flex-end;
-        .logoWhatsapp {
-            @include estilologo(70px, 9px, 50%);
-            background-color: rgba(92, 91, 91, 0.5058823529);
-        }
-        .logoWhatsapp:hover {
-            box-shadow: 2px 2px 5px #000000;
-            background-color: #075E54;
-        }
+.icono-wpp {
+    position: fixed;
+    right: 25px;
+    bottom: 35px;
+    z-index: 999;   
+    .logo-whats {
+        width: 3.5rem;
+        border-radius: 100%;
+    }
+    .logo-whats:hover {
+        box-shadow: 3px 3px 3px $color_verde_suave;
     }
 }
 
+/* Media Querie version mobile */
+
+@media only screen and (min-width: 280px) and (max-width: 599px){
+    .icono-wpp {
+        .logo-whats {
+            width: 3rem;
+        }
+        
+    }
+}
 
 /* Fin WhatsApp */

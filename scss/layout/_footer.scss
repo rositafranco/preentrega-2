@@ -2,8 +2,11 @@
 .tamañotextofooter {
     font-size: 1rem;
     font-weight: lighter;
-    .interlineado {
-        line-height: 1rem;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 479px){
+    .tamañotextofooter {
+        font-size: .8rem;
     }
 }
 

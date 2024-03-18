@@ -15,11 +15,11 @@
 
 
 /* Sección Contatto */
-.content{
+.content {
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
-    padding: 1.5em;
+    padding: .5em; /*1.5*/
     font-size: .8rem;
 
     .first-contact { /*Contactanos el primero*/
@@ -27,12 +27,13 @@
         font-size: 3em;
     }
     .contact-wrapper > * {
-        padding: 1em;
+        padding: .5em; /*1em*/
     }
     .contact-wrapper {
         box-shadow: 0 0 20px 0 rgba(32, 31, 31, 0.3); /*0 0 20px 0 rgba(136, 133, 133, 0.3)*/
-        border: 1rem solid $color_verde;
-        background: url(/img/img_css/light-grey-terrazzo.png);
+        border: .5rem solid $color_verde; /*1rem*/
+        background: rgb(206,210,213);
+        background: linear-gradient(90deg, rgba(206,210,213,0.3604035364145658) 0%, rgba(207,210,212,1) 100%);
         .contact-form {
             form {
                 display: grid;
@@ -65,16 +66,17 @@
                 }
                 p {
                     margin: 0;
-                    padding: 1.5em;
+                    padding: .5em; /*1.5em*/
                 }
                 input {
-                    @include form(100%, .7em, none, none, none, 1px solid $color_negro);
+                    @include form(100%, .5em, none, none, none, 1px solid $color_negro); /*7em*/
                 }
                 select{
-                    @include form(100%, .7em, none, none, none, 1px solid $color_negro);
+                    @extend input;
                 }
                 textarea{
-                    @include form(100%, .7em, none, none, none, 1px solid $color_negro);
+                    @extend input;
+                    
                 } 
             }
         }
@@ -82,7 +84,7 @@
         .contact-info {
             border: 10px solid $color_verde_suave;
             h4 {
-                @include info(center, 0 0 1rem 0, none, 0)
+                @include info(center, 0 0 1rem 0, none, 0);
             }
             ul {
                 list-style: none;
@@ -90,7 +92,8 @@
                 li {
                     @include info(center, 0 0 1rem 0, none, 0);
                     span {
-                        @include info(center, 0 0 1rem 0, none, 0);
+                        @extend h4;
+                        font-size: .8rem;
                     }
                 }
             }
@@ -102,12 +105,27 @@
 }
 
 
+@media only screen and (max-width: 281px){
+    .content {
+        font-size: .6rem;
+        .contact-info {
+            ul {
+                li {
+                    span {
+                        font-size: .6rem;
+                    }
+                }
+            }
+        }
+
+    }
+}
 
 
 /*Pantalla grande.  700 yo 750 estamos probando y era min width*/
-@media only screen and (min-width: 750px){
+@media only screen and (min-width: 720px){
     .content{
-        font-size: 1.5rem;
+        font-size: 1rem;/*1.5*/
         .contact-wrapper {
             display: grid;
             grid-template-columns: 2fr 1fr;
@@ -117,7 +135,7 @@
         }
 
         .contact-info{
-            font-size: 1rem; 
+            font-size: .8rem; 
             h4 {
                 text-align: left;
             }
@@ -126,6 +144,7 @@
                     text-align: left;
                     span {
                         text-align: left;
+                        font-size: .8rem;
                     }
                 }
             }

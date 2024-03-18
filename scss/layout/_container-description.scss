@@ -1,0 +1,41 @@
+// Container index, mimosa, agave blu
+@mixin estilotitulo ($fuente, $grosor, $top) {
+    font-size: $fuente;
+    font-weight: $grosor;
+    margin-top: $top;
+
+}
+
+/* Container index, mimosa, agave blu */
+
+.container_tittle_description {
+    box-shadow: 10px 10px 20px 10px rgba(136, 133, 133, 0.3);
+    margin: 2rem;
+    padding: 0;
+    background: rgb(16,49,43);
+    background: linear-gradient(90deg, rgba(16,49,43,1) 34%, rgba(34,67,61,1) 92%);
+    color: $color_blanco;
+    border-radius: 1rem;
+        // Titulo
+        /* Titulo */
+    .tittle{
+        h1{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            color: $color_blanco;
+            @include estilotitulo(25px, bold, 30px);
+            transition: all 0.3s ease 0s;
+        }
+        &:hover {
+        transform: scale(1.1);
+        }
+    }
+    
+        /* Descripción casa vacanze, Mimosa y Agave Blu*/
+    .description {
+        display: flex;
+        justify-content: center;
+        text-align:justify;
+    }
+}

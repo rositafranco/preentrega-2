@@ -1,7 +1,7 @@
 
 #Ignora archivos para completar formulario
-pages/exito.html
-pages/form.php
+pages/formulario/exito.html
+pages/formulario/form.php
 
 #Ignorar todos los archivos DS Store
 .DS_Store
