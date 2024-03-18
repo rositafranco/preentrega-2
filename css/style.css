@@ -413,6 +413,17 @@ body {
   filter: none;
 }
 
+@media only screen and (max-width: 281px) {
+  .help div h3 {
+    font-size: 0.9rem;
+  }
+  .help div p {
+    font-size: 0.8rem;
+  }
+  .contenedor {
+    display: none;
+  }
+}
 /* Boton card contacto index */
 .btn {
   background-color: #B2926B;
