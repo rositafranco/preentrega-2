@@ -72,10 +72,11 @@
                     @include form(100%, .5em, none, none, none, 1px solid $color_negro); /*7em*/
                 }
                 select{
-                    @include form(100%, .5em, none, none, none, 1px solid $color_negro);
+                    @extend input;
                 }
                 textarea{
-                    @include form(100%, .5em, none, none, none, 1px solid $color_negro);
+                    @extend input;
+                    
                 } 
             }
         }
@@ -83,7 +84,7 @@
         .contact-info {
             border: 10px solid $color_verde_suave;
             h4 {
-                @include info(center, 0 0 1rem 0, none, 0)
+                @include info(center, 0 0 1rem 0, none, 0);
             }
             ul {
                 list-style: none;
@@ -91,7 +92,7 @@
                 li {
                     @include info(center, 0 0 1rem 0, none, 0);
                     span {
-                        @include info(center, 0 0 1rem 0, none, 0);
+                        @extend h4;
                         font-size: .8rem;
                     }
                 }

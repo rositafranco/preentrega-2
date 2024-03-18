@@ -21,31 +21,30 @@ body {
   position: sticky;
   top: 0;
 }
-
-.logo {
+.sticky-top .logo {
   max-width: 6rem;
   border-radius: 50%;
   margin-left: 20px;
 }
-
-.navbar-toggler {
+.sticky-top .navbar-toggler {
   border: none;
   color: #fff;
 }
-
-.navbar-toggler:focus {
+.sticky-top .navbar-toggler:focus {
   box-shadow: none;
 }
-
-.navbar-nav {
+.sticky-top .navbar-nav {
   margin-left: auto;
 }
-.navbar-nav li a {
+.sticky-top .navbar-nav li a {
   color: #fff;
   font-size: 1.2rem;
   font-weight: 600;
   margin-right: 1rem;
   text-transform: uppercase;
+}
+.sticky-top .navbar-nav li a:hover {
+  color: #222222;
 }
 
 /* End Header */
@@ -60,6 +59,9 @@ body {
   width: 3.5rem;
   border-radius: 100%;
 }
+.icono-wpp .logo-whats:hover {
+  box-shadow: 3px 3px 3px #84A384;
+}
 
 /* Media Querie version mobile */
 @media only screen and (min-width: 280px) and (max-width: 599px) {
@@ -67,26 +69,6 @@ body {
     width: 3rem;
   }
 }
-/*
-@mixin estilologo ($ancho, $espacio, $border){
-    width: $ancho;
-    padding: $espacio;
-    border-radius: $border;
-}
-
-.sectionLogoWhatsapp {
-        transform: translate(-50px);
-        .logoWhatsapp {
-            @include estilologo(70px, 9px, 50%);
-            background-color: rgba(92, 91, 91, 0.5058823529);
-        }
-        .logoWhatsapp:hover {
-            box-shadow: 2px 2px 5px #000000;
-            background-color: #075E54;
-        }
-    }
-
-*/
 /* Fin WhatsApp */
 /* Container index, mimosa, agave blu */
 .container_tittle_description {
@@ -150,23 +132,6 @@ body {
   }
 }
 /* Carousel y texto apartamento Mimosa y Agave Blu */
-/*@keyframes identifier {
-    0% {
-      top: 0;
-      left: 0;
-    }
-    30% {
-      top: 50px;
-    }
-    68%,
-    72% {
-      left: 50px;
-    }
-    100% {
-      top: 100px;
-      left: 100%;
-    }
-  }*/
 .discover-mimosa {
   background-color: #222222;
   font-size: 1.4rem;
@@ -256,7 +221,7 @@ body {
   margin: 0;
   padding: 0.5em; /*1.5em*/
 }
-.content .contact-wrapper .contact-form form input {
+.content .contact-wrapper .contact-form form input, .content .contact-wrapper .contact-form form textarea, .content .contact-wrapper .contact-form form select {
   width: 100%;
   padding: 0.5em;
   border: none;
@@ -265,26 +230,10 @@ body {
   border-bottom: 1px solid #222222;
   /*7em*/
 }
-.content .contact-wrapper .contact-form form select {
-  width: 100%;
-  padding: 0.5em;
-  border: none;
-  background: none;
-  outline: none;
-  border-bottom: 1px solid #222222;
-}
-.content .contact-wrapper .contact-form form textarea {
-  width: 100%;
-  padding: 0.5em;
-  border: none;
-  background: none;
-  outline: none;
-  border-bottom: 1px solid #222222;
-}
 .content .contact-wrapper .contact-info {
   border: 10px solid #84A384;
 }
-.content .contact-wrapper .contact-info h4 {
+.content .contact-wrapper .contact-info h4, .content .contact-wrapper .contact-info ul li span {
   text-align: center;
   margin: 0 0 1rem 0;
   list-style: none;
@@ -301,10 +250,6 @@ body {
   padding: 0;
 }
 .content .contact-wrapper .contact-info ul li span {
-  text-align: center;
-  margin: 0 0 1rem 0;
-  list-style: none;
-  padding: 0;
   font-size: 0.8rem;
 }
 .content .contact-wrapper .contact-info p {
@@ -337,7 +282,7 @@ body {
   .content .contact-info {
     font-size: 0.8rem;
   }
-  .content .contact-info h4 {
+  .content .contact-info h4, .content .contact-wrapper .contact-info ul li span {
     text-align: left;
   }
   .content .contact-info ul li {
