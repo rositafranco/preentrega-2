@@ -296,6 +296,15 @@ body {
     text-align: left;
   }
 }
+/* Mensaje Exito formulario */
+body .exito {
+  display: flex;
+  justify-content: center;
+  transform: translateY(16rem);
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
 /*Footer*/
 .tamañotextofooter {
   font-size: 1rem;
