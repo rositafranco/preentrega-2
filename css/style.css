@@ -144,6 +144,17 @@ body {
     font-size: 0.8rem;
   }
 }
+@media only screen and (min-width: 1024px) and (max-width: 1700px) {
+  .carousel {
+    height: 87vh;
+  }
+  .carousel .carousel-inner {
+    height: 100%;
+  }
+  .carousel .carousel-inner .carousel-item img {
+    height: 100%;
+  }
+}
 /* Iconos */
 .icon-item img {
   width: 6rem;

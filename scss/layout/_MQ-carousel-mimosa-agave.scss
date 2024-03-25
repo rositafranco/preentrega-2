@@ -4,3 +4,20 @@
         font-size: .8rem;
     }
 }
+
+// Media queries tutti i carousel
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1700px){
+    .carousel {
+        height: 87vh;
+        .carousel-inner {
+            height: 100%;
+            .carousel-item {
+                img {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
