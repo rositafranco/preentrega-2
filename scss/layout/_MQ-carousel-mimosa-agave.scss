@@ -7,8 +7,20 @@
 
 // Media queries tutti i carousel
 
-
 @media only screen and (min-width: 1024px) and (max-width: 1700px){
+    .slider-index{
+        height: calc(100vh - 122px);
+        object-fit: cover;
+        .carousel-inner{
+            img {
+                height: 100%
+            }
+        }
+    }    
+}
+
+
+/*{
     .carousel {
         height: 87vh;
         .carousel-inner {
@@ -20,4 +32,4 @@
             }
         }
     }
-}
+}*/
